@@ -6,13 +6,14 @@ of networking among connectivity-challenged nodes, specifically: networking
 among nodes with highly dynamic connectivity imposed by virtue of their
 non-terrestrial deployment environment. This includes High Altitude Platforms
 (HAPS), typically in the stratosphere, satellites in Low, Mid, and
-Geosynchronous orbits (LEO, MEO, GEO), and platforms in other cislunar
-trajectories.
+Geosynchronous orbits (VLEO, LEO, MEO, GEO), as well as platforms outside Earth orbit,
+including (but not limited to) lunar and other planetary surfaces and orbits,
+Lagrange points, etc.
 
 Previous research work (DTNRG) focused on the delay and disruption tolerance
 required to communicate effectively in extreme connectivity-challenged
 scenarios (vis. RFC 4838). Since that time, network nodes on aerospace
-platforms in the cislunar regime have seen a rapid rise in deployment and
+platforms in the LEO regime have seen a rapid rise in deployment and
 scale. This regime poses less extreme time constraints on connectivity, but
 the rapidity of change and variability of topologies that might be built
 among nodes moving through this environment present new challenges.
@@ -24,9 +25,12 @@ interest are:
 
   * simulation, measurement, or testing techniques that are particularly
     well suited for NTNs,
+  * metrics and performance evaluation techniques and methodologies,
   * the impact to transport protocols as paths experience normal changes
     in characteristics like latency, jitter, and loss associated with
     nominal platform behavior,
+  * effective security mechanisms and techniques,
+  * routing and addressing approaches,
   * proposals for scalable, stable routing or network orchestration
     strategies in such a dynamic environment, and
   * ideas on whether and how traffic engineering may be optimally
